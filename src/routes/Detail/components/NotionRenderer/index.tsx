@@ -120,5 +120,7 @@ const StyledWrapper = styled.div`
   }
   .notion-page {
     padding: 0;
+    /* font-size: 1.125rem; */
+    line-height: 1.8;
   }
 `

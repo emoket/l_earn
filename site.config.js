@@ -10,10 +10,15 @@ const CONFIG = {
     github: "emoket",
     instagram: "",
   },
+  // ServiceCard setting (If you don't have any project, just empty array below)
   projects: [
     //   {
     //     name: `morethan-log`,
     //     href: "https://github.com/morethanmin/morethan-log",
+    //   },
+    //   {
+    //     name: `bbbb`,
+    //     href: "https://bbb.com",
     //   },
   ],
   // blog setting (required)

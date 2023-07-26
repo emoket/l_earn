@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 import React from "react"
 import { Emoji } from "src/components/Emoji"
 import { useTagsQuery } from "src/hooks/useTagsQuery"
+import { AiOutlineTags } from "react-icons/ai"
 
 type Props = {}
 
@@ -35,8 +36,10 @@ const TagList: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="top">
-        <Emoji>🏷️</Emoji> Tags
+        <AiOutlineTags />
+        <span className="tag">Tags</span>
       </div>
+
       <div className="list">
         {Object.keys(data).map((key) => (
           <a
@@ -55,14 +58,22 @@ const TagList: React.FC<Props> = () => {
 export default TagList
 
 const StyledWrapper = styled.div`
+  .tag {
+    margin-top: -3px;
+    margin-left: 5px;
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+
   .top {
-    display: none;
-    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
     margin-bottom: 0.75rem;
 
-    @media (min-width: 1024px) {
+    /* @media (min-width: 1024px) {
       display: block;
-    }
+    } */
   }
 
   .list {

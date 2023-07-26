@@ -10,6 +10,12 @@ export const Global = () => {
     <_Global
       styles={css`
         body {
+          --notion-font: "NanumSquareRound", "NanumSquareRoundL",
+            "NanumSquareRoundB", "NanumSquareRoundEB", ui-sans-serif, system-ui,
+            -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            "Noto Sans", sans-serif;
+          font-family: var(--notion-font);
           margin: 0;
           padding: 0;
           color: ${theme.colors.gray12};
@@ -60,7 +66,7 @@ export const Global = () => {
         textarea {
           border: none;
           background-color: transparent;
-          font-family: inherit;
+          font-family: ${pretendard.style.fontFamily};
           padding: 0;
           outline: none;
           resize: none;

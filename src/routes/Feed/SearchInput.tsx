@@ -7,15 +7,10 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {}
 const SearchInput: React.FC<Props> = ({ ...props }) => {
   return (
     <StyledWrapper>
-      <div className="top">
+      {/* <div className="top">
         <Emoji>🔎</Emoji> Search
-      </div>
-      <input
-        className="mid"
-        type="text"
-        placeholder="Search Keyword..."
-        {...props}
-      />
+      </div> */}
+      <input className="mid" type="text" placeholder="Search..." {...props} />
     </StyledWrapper>
   )
 }
@@ -33,6 +28,8 @@ const StyledWrapper = styled.div`
     margin-bottom: 0.75rem;
   }
   > .mid {
+    font-weight: 300;
+    font-size: 0.875rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1.25rem;

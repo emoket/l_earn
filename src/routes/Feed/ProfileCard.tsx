@@ -7,19 +7,20 @@ import { Emoji } from "src/components/Emoji"
 type Props = {}
 
 const ProfileCard: React.FC<Props> = () => {
+  const { image, name, role, bio } = CONFIG.profile
   return (
     <StyledWrapper>
-      <div className="title">
+      {/* <div className="title">
         <Emoji>💻</Emoji> Profile
-      </div>
+      </div> */}
       <div className="content">
         <div className="top">
-          <Image src={CONFIG.profile.image} fill alt="" />
+          <Image src={image} fill alt="avatar" />
         </div>
         <div className="mid">
-          <div className=" name">{CONFIG.profile.name}</div>
-          <div className="role">{CONFIG.profile.role}</div>
-          <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
+          <div className=" name">{name}</div>
+          <div className="role">{role}</div>
+          {/* <div className="text-sm mb-2">{bio}</div> */}
         </div>
       </div>
     </StyledWrapper>
@@ -56,13 +57,13 @@ const StyledWrapper = styled.div`
     }
     .mid {
       display: flex;
-      padding: 0.5rem;
+      padding: 0.25rem;
       flex-direction: column;
       align-items: center;
       .name {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        font-style: italic;
+        /* font-style: italic; */
         font-weight: 700;
       }
       .role {

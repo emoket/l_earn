@@ -6,12 +6,25 @@ class MyDocument extends Document {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+          />
           <link
             rel="apple-touch-icon"
-            sizes="192x192"
+            sizes="180x180"
             href="/apple-touch-icon.png"
-          ></link>
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/favicon-96x96.png"
+          />
+          <link rel="manifest" href="/manifest.json" />
           <link
             rel="alternate"
             type="application/rss+xml"
@@ -27,6 +40,10 @@ class MyDocument extends Document {
               />
             </>
           )}
+          <link
+            href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

@@ -1,9 +1,9 @@
 import { useState } from "react"
+import styled from "@emotion/styled"
 
 import SearchInput from "./SearchInput"
 import { FeedHeader } from "./FeedHeader"
 import Footer from "./Footer"
-import styled from "@emotion/styled"
 import TagList from "./TagList"
 import MobileProfileCard from "./MobileProfileCard"
 import ProfileCard from "./ProfileCard"

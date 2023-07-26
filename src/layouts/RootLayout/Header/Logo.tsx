@@ -3,9 +3,11 @@ import { CONFIG } from "site.config"
 import styled from "@emotion/styled"
 
 const Logo = () => {
+  const { title } = CONFIG.blog
+
   return (
-    <StyledWrapper href="/" aria-label={CONFIG.blog.title}>
-      {CONFIG.blog.title}
+    <StyledWrapper href="/" aria-label={title}>
+      👨🏻‍💻 {title}
     </StyledWrapper>
   )
 }
