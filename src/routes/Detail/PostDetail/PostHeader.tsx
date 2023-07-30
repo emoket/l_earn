@@ -69,7 +69,7 @@ export default PostHeader
 const StyledWrapper = styled.div`
   .title {
     font-size: 1.875rem;
-    line-height: 2.25rem;
+    line-height: 1.5rem;
     font-weight: 800;
   }
   nav {
@@ -116,7 +116,7 @@ const StyledWrapper = styled.div`
       overflow: hidden;
       position: relative;
       margin-bottom: 1.75rem;
-      border-radius: 1.5rem;
+      border-radius: 1rem;
       width: 100%;
       background-color: ${({ theme }) => theme.colors.gray4};
       padding-bottom: 66%;

@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 import { useRouter } from "next/router"
 import React from "react"
+import { HiArrowLeft, HiArrowUp } from "react-icons/hi2"
 
 type Props = {}
 
@@ -8,9 +9,11 @@ const Footer: React.FC<Props> = () => {
   const router = useRouter()
   return (
     <StyledWrapper>
-      <a onClick={() => router.push("/")}>← Back</a>
+      <a onClick={() => router.push("/")}>
+        <HiArrowLeft />
+      </a>
       <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-        ↑ Top
+        <HiArrowUp />
       </a>
     </StyledWrapper>
   )
@@ -24,7 +27,8 @@ const StyledWrapper = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.colors.gray10};
   a {
-    margin-top: 0.5rem;
+    font-size: x-large;
+    margin-top: 0.75rem;
     cursor: pointer;
 
     :hover {
