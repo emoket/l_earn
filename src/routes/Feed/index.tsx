@@ -3,13 +3,13 @@ import styled from "@emotion/styled"
 
 import SearchInput from "./SearchInput"
 import { FeedHeader } from "./FeedHeader"
-import Footer from "./Footer"
 import TagList from "./TagList"
+import PostList from "./PostList"
 import MobileProfileCard from "./MobileProfileCard"
 import ProfileCard from "./ProfileCard"
 import ServiceCard from "./ServiceCard"
 import ContactCard from "./ContactCard"
-import PostList from "./PostList"
+import Footer from "./Footer"
 
 type Props = {}
 
@@ -27,7 +27,7 @@ const Feed: React.FC<Props> = () => {
         <TagList />
       </div>
       <div className="mid">
-        <MobileProfileCard />
+        {/* <MobileProfileCard /> */}
         <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="tags">
           <TagList />
@@ -45,11 +45,11 @@ const Feed: React.FC<Props> = () => {
         }}
       >
         <ProfileCard />
-        <ServiceCard />
-        <ContactCard />
-        <div className="footer">
+        {/* <ServiceCard /> */}
+        {/* <ContactCard /> */}
+        {/* <div className="footer">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </StyledWrapper>
   )
@@ -116,8 +116,8 @@ const StyledWrapper = styled.div`
 
     display: none;
     overflow: scroll;
-    position: sticky;
-    top: 73px;
+    position: relative;
+    /* top: 73px; */
 
     @media (min-width: 1024px) {
       display: block;

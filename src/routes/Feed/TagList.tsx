@@ -1,9 +1,8 @@
+import React from "react"
 import styled from "@emotion/styled"
 import { useRouter } from "next/router"
-import React from "react"
-import { Emoji } from "src/components/Emoji"
 import { useTagsQuery } from "src/hooks/useTagsQuery"
-import { AiOutlineTags } from "react-icons/ai"
+import { HiTag } from "react-icons/hi2"
 
 type Props = {}
 
@@ -36,7 +35,7 @@ const TagList: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="top">
-        <AiOutlineTags />
+        <HiTag />
         <span className="tag">Tags</span>
       </div>
 
@@ -108,14 +107,14 @@ const StyledWrapper = styled.div`
       cursor: pointer;
 
       :hover {
-        background-color: ${({ theme }) => theme.colors.gray4};
+        background-color: ${({ theme }) => theme.colors.gray3};
       }
       &[data-active="true"] {
         color: ${({ theme }) => theme.colors.gray12};
-        background-color: ${({ theme }) => theme.colors.gray4};
+        background-color: ${({ theme }) => theme.colors.gray3};
 
         :hover {
-          background-color: ${({ theme }) => theme.colors.gray4};
+          background-color: ${({ theme }) => theme.colors.gray3};
         }
       }
     }
