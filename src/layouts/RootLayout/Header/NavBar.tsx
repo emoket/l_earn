@@ -19,12 +19,13 @@ const NavBar: React.FC = () => {
 export default NavBar
 
 const StyledWrapper = styled.div`
-  font-weight: 500;
+  font-weight: 200;
   color: ${({ theme }) => theme.colors.gray10};
   flex-shrink: 0;
   ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     li {
       display: block;
       margin-left: 1rem;

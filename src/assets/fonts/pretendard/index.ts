@@ -4,12 +4,12 @@ export const pretendard = localFont({
   src: [
     {
       path: "./Pretendard-Thin.woff2",
-      weight: "300",
+      weight: "100",
       style: "normal",
     },
     {
       path: "./Pretendard-ExtraLight.woff2",
-      weight: "300",
+      weight: "200",
       style: "normal",
     },
     {
@@ -24,12 +24,12 @@ export const pretendard = localFont({
     },
     {
       path: "./Pretendard-Medium.woff2",
-      weight: "400",
+      weight: "500",
       style: "normal",
     },
     {
       path: "./Pretendard-SemiBold.woff2",
-      weight: "400",
+      weight: "600",
       style: "normal",
     },
     {
@@ -44,7 +44,7 @@ export const pretendard = localFont({
     },
     {
       path: "./Pretendard-Black.woff2",
-      weight: "800",
+      weight: "900",
       style: "normal",
     },
   ],

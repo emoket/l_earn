@@ -15,7 +15,7 @@ const Logo = () => {
 export default Logo
 
 const StyledWrapper = styled(Link)`
-  font-weight: 500;
+  font-weight: 200;
   color: ${({ theme }) => theme.colors.gray10};
   span {
     cursor: pointer;
