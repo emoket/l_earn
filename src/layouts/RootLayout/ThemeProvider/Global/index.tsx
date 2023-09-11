@@ -1,6 +1,4 @@
 import { Global as _Global, css, useTheme } from "@emotion/react"
-
-import { ThemeProvider as _ThemeProvider } from "@emotion/react"
 import { pretendard } from "src/assets"
 
 export const Global = () => {
@@ -10,12 +8,11 @@ export const Global = () => {
     <_Global
       styles={css`
         body {
-          --notion-font: "NanumSquareRound", "NanumSquareRoundL",
-            "NanumSquareRoundB", "NanumSquareRoundEB", ui-sans-serif, system-ui,
-            -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-            "Noto Sans", sans-serif;
-          font-family: var(--notion-font);
+          /* --notion-font: "Pretendard", ui-sans-serif, system-ui, -apple-system,
+            BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+            "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            "Noto Sans", sans-serif; */
+          /* font-family: var(--notion-font); */
           margin: 0;
           padding: 0;
           color: ${theme.colors.gray12};

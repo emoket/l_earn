@@ -40,10 +40,6 @@ class MyDocument extends Document {
               />
             </>
           )}
-          <link
-            href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
-            rel="stylesheet"
-          />
         </Head>
         <body>
           <Main />
